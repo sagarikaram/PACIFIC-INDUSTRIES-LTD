@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Awards</title>
+  <style>
+      
+    
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+      background-color: #070606;
+      color: rgb(17, 1, 1);
+      padding: 10px 0;
+      position: static;
+    }
+
+    .top-header {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .top-header a {
+      color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .top-header a:hover {
+      color: #b1cf05; 
+    }
+
+    .top-header i {
+      font-size: 16px;
+    }
+    header{
+      background-color: #0a0dca00;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+
+
+
+      .second-header {
+      background-color: #fff;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .online-enquiry {
+      background-color: orange;
+      color: white;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .latest-news {
+      color: #320bbe;
+      font-weight: bold;
+      animation: blink 3s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    header {
+      background-color: #370dcc;
+      padding: 15px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links > li {
+      position: relative;
+    }
+
+    .nav-links > li > a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .nav-links > li > a:hover {
+      background-color: #4611d8;
+      border-radius: 4px;
+    }
+
+    
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #360fe4;
+      flex-direction: column;
+      border: 1px solid #2908e4;
+      min-width: 160px;
+      z-index: 1000;
+    }
+
+    .dropdown-menu a {
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      transition:  0.3s;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #12058d;
+    }
+
+    
+    .nav-links li:hover .dropdown-menu {
+      display: flex;
+    }
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      height: 200vh; 
+      background-color: #f0f0f0;
+    }
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .awards-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .awards-section h2 {
+      font-size: 2.8em;
+      margin-bottom: 40px;
+      color: #070606;
+    }
+
+    .certificates-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .certificate-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(14, 13, 13, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.05);
+    }
+
+    .certificate-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .certificate-text {
+      padding: 15px;
+      font-size: 1em;
+      background-color: #fff;
+      color: #444;
+      border-top: 1px solid #eee;
+    }
+
+    @media (max-width: 992px) {
+      .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .certificates-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .awards-section h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top-header">
+      <a href="/">
+        <i class="fas fa-home"></i>
+        
+      </a>
+      <a href="tel:+91 2942440196">
+        <i class="fas fa-phone-alt"></i>
+        +91 2942440196
+      </a>
+      <a href="pilnorth@pacificgranites.com">
+        <i class="fas fa-envelope"></i>
+        pilnorth@pacificgranites.com
+      </a>
+      <a href="pilsouth@pacificgranites.com">
+        <i class="fas fa-envelope"></i>
+        pilsouth@pacificgranites.com
+      </a>
+      <a href="Download Brochure">
+        <i class=" fas fa-file-download"></i>
+        Download Brochure
+      </a>
+      <a href="Request for sample">
+        <i class=" fas fa-arrow-right"></i>
+        Request for sample
+      </a>
+    </div> </header>
+     <header><div class="second-header">
+    <a href="#enquiry" class="online-enquiry">Online Enquiry</a>
+    <div class="latest-news">Latest News</div>
+  </div></header>
+<header> <img src="logo.png" alt=""  width="250px" height="100" >
+<img src="taanj-logo.jpg" alt="" style="position: absolute; top: 1rem; right: 1rem; height: 50px;"> 
+  
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li>
+          <a href="#">ABOUT US</a>
+          <div class="dropdown-menu">
+    
+            <a href="About us .html">ABOUT PACIFIC</a>
+            <a href="infrastructure.html">INFRASTRUCTURE</a>
+            <a href="history.html">HISTORY</a>
+            <a href="Vision and Mission.html">VISION AND MISSION</a>
+            <a href="awards.html">AWARDS</a>
+          </div>
+        </li>
+
+        <li>
+          <a href="QUARRIES">QUARRIES</a>
+            <div class="dropdown-menu">
+            <a href="About quarries.html">ABOUT QUARRIES</a>
+            <a href="indigo.html">INDIGO</a>
+            <a href="savannah white.html">SAVANNAHA WHITE</a>
+            <a href="bluenight.html">BLUE NIGHT</a>
+            <a href="titanium black.html">TITANIUM BLACK</a>
+          </div>
+          
+        </li>
+
+        <li>
+          <a href="TAAJ QUAATZ">TAAJ QUAATZ</a>
+          
+        </li>
+        <li>
+           <a href="INVESTOR">INVESTOR</a>
+          <div class="dropdown-menu">
+            <a href="commitees of directors.html">COMMITTEES OF DIRECTORS</a>
+            <a href="Financials.html">FINANCIALS</a>
+            <a href="listing.html">LISTING REPORTS</a>
+            <a href="annual reports.html">ANNUAL REPORTS</a>
+            <a href="listing.html">INVESTORS HELPDESK</a>
+            
+          </div>
+          </li>
+          <li>
+          <a href="PRODUCTS">PRODUCTS</a>
+          <div class="dropdown-menu">
+            <a href="North indian granites.html">NORTH INDIAN GRANITERS</a>
+            <a href="South indian granites.html">SOUTH INDIAN GRANITES</a>
+            <a href="New arrivals.html">NEW ARRIVALS</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">GROUP COMPANIES</a>
+          
+          
+        </li>
+        <li>
+          <a href="#">CONTACT US </a>
+          
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+
+  <section class="awards-section">
+    <h2>Awards</h2>
+    <div class="certificates-grid">
+      <div class="certificate-card">
+        <img src="01.jpg" alt="Certificate 1" />
+        <div class="certificate-text">Certificate of Life Members from Center for Development of Stones.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="02.jpg" alt="Certificate 2" />
+        <div class="certificate-text">Certificate of Members of CONFEDERATION OF EXPORT UNITS, Delhi.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="03.jpg" alt="Certificate 3" />
+        <div class="certificate-text">Certificate of State Award for Export Excellence issued by Government of Rajasthan.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="04.jpg" alt="Certificate 4" />
+        <div class="certificate-text">Office of The Development Commissioner SEZ,/EOU.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="05.jpg" alt="Certificate 5" />
+        <div class="certificate-text">Certificate of Merit for 2006-07.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="06.jpg" alt="Certificate 6" />
+        <div class="certificate-text">CSR Excellence Award</div>
+      </div>
+      <div class="certificate-card">
+        <img src="07.jpg" alt="Certificate 7" />
+        <div class="certificate-text">Best Innovation in Manufacturing</div>
+      </div>
+      <div class="certificate-card">
+        <img src="08.jpg" alt="Certificate 8" />
+        <div class="certificate-text">Top Stone Exporter Certification</div>
+      </div>
+      
+      <div class="certificate-card">
+        <img src="09.jpg" alt="Certificate 9" />
+        <div class="certificate-text">Occupational Health & Safety Standard</div>
+      </div>
+      <div class="certificate-card">
+        <img src="10.jpg" alt="Certificate 9" />
+        <div class="certificate-text">Certificate of Recognition.</div>
+      </div>
+      <div class="certificate-card">
+        <img src="11.jpg" alt="Certificate 9" />
+        <div class="certificate-text">State Award for Export Excellence (2012-2013)</div>
+      </div>
+      <div class="certificate-card">
+        <img src="12.jpg" alt="Certificate 9" />
+        <div class="certificate-text">Rajasthan State Award for Export Excellence
+(2012-2013)</div>
+      </div>
+      
+    </div>
+  </section>
+
+</body>
+</html>

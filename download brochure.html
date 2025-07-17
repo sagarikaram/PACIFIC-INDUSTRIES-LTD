@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Brochure</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #fdfdfd;
+      padding: 30px;
+    }
+    .brochure-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .download-btn {
+      background-color: #f97316;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #ea580c;
+    }
+    .pdf-preview {
+      width: 100%;
+      height: 500px;
+      margin-top: 40px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container brochure-section">
+    <h1>PACIFIC INDUSTRIES</h1>
+    
+
+    
+    <a href="brochure.pdf" download class="download-btn">
+      <i class="bi bi-download"></i> Download Brochure
+    </a>
+
+    <div class="pdf-preview mt-4">
+      <iframe src="brochure.pdf#toolbar=0&navpanes=0&scrollbar=0" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>
